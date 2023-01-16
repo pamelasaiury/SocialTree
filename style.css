@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+:root {
+    --white-light: #FAF7FD;
+    --pink: #ED5B8F;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  body{
+    font-family: poppins, sans-serif;
+    background: var(--white-light);
+  }
+
+  .container {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container, .social-tree {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+  }
+
+    .avatar img {
+        padding: 5px;
+        border: 1px solid var(--pink);
+        border-radius: 100px;
+  }
+
+  .social-tree, .insta-user {
+
+    margin-top: 15px ;
+    color: var(--pink);
+  }
+
+  .social-tree, .links-container {
+
+    margin-top: 25px ;
+  }
+
+  .links-container  {
+    
+    display: flex;
+    flex-direction: column;
+
+    /*   ou
+    display: grid;
+    grid-template-columns: repeat(4,1fr) */
+    
+  }
+
+  .link {
+    width: 325px;
+    height: 50px;
+    
+    border: 1px solid var(--pink);
+    border-radius: 4px;
+    margin-top: 5px;
+
+    /*12px p/ cima e baixo, 0 p, esquerda e direita*/
+    padding: 12px 0;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--pink);
+
+    transition: ease 0.5s; 
+  }
+
+  .link:hover{
+    background: var(--pink);
+    color: var(--white-light);
+  }
+
+
+  .social-container {
+
+    margin-top: 25px ;
+
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    
+    /*display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 35px;*/
+
+  }
+
+  .social {
+    
+    transition: ease 0.5s;
+    transform: scale(0.9);
+  }
+
+  .social:hover{
+    transform: scale(1.2);
+  }
+
+
